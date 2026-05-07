@@ -8,7 +8,7 @@ export const initsocket = () => {
     return socket;
   }
 
-  socket = io(" https://code-editor-0dot.onrender.com", {
+  socket = io("http://localhost:8000", {
     transports: ["websocket"], 
     reconnection: false, // ❗ stop retry spam
     forceNew: false,
